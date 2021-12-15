@@ -1,0 +1,22 @@
+{
+  "name": "connectivity-monitor",
+  "version": "0.0.1",
+  "description": "Handle browser connectivity events",
+  "main": "dist/es5/src/index.js",
+  "module": "dist/esnext/src/index.js",
+  "typings": "dist/es5/src/index.d.ts",
+  "scripts": {
+    "build-es5": "tsc --module CommonJS --target es5 --outDir dist/es5/",
+    "build-esnext": "tsc --module ES2020 --target ES2018 --outDir dist/esnext/",
+    "build": "npm run build-es5 && npm run build-esnext"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencompton/connectivity-monitor.git"
+  },
+  "author": "Ben Compton",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
